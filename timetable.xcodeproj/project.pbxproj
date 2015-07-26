@@ -14,6 +14,9 @@
 		A7D959AF1B64F62E009D1D8B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7D959AE1B64F62E009D1D8B /* Images.xcassets */; };
 		A7D959B21B64F62E009D1D8B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7D959B01B64F62E009D1D8B /* LaunchScreen.xib */; };
 		A7D959BE1B64F62E009D1D8B /* timetableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D959BD1B64F62E009D1D8B /* timetableTests.swift */; };
+		E75EC5B51B6544C600191B19 /* HTMLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75EC5B31B6544C600191B19 /* HTMLNode.swift */; };
+		E75EC5B61B6544C600191B19 /* HTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75EC5B41B6544C600191B19 /* HTMLParser.swift */; };
+		E75EC5B81B6544E600191B19 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E75EC5B71B6544E600191B19 /* libxml2.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,10 @@
 		A7D959B71B64F62E009D1D8B /* timetableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = timetableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7D959BC1B64F62E009D1D8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7D959BD1B64F62E009D1D8B /* timetableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timetableTests.swift; sourceTree = "<group>"; };
+		E75EC5AF1B6544B300191B19 /* timetable-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "timetable-Bridging-Header.h"; sourceTree = "<group>"; };
+		E75EC5B31B6544C600191B19 /* HTMLNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMLNode.swift; sourceTree = "<group>"; };
+		E75EC5B41B6544C600191B19 /* HTMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMLParser.swift; sourceTree = "<group>"; };
+		E75EC5B71B6544E600191B19 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E75EC5B81B6544E600191B19 /* libxml2.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +71,7 @@
 			children = (
 				A7D959A11B64F62E009D1D8B /* timetable */,
 				A7D959BA1B64F62E009D1D8B /* timetableTests */,
+				E75EC5BB1B65450B00191B19 /* Frameworks */,
 				A7D959A01B64F62E009D1D8B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,6 +88,7 @@
 		A7D959A11B64F62E009D1D8B /* timetable */ = {
 			isa = PBXGroup;
 			children = (
+				E75EC5AD1B65448200191B19 /* Thirsd party */,
 				A7D959A41B64F62E009D1D8B /* AppDelegate.swift */,
 				A7D959A91B64F62E009D1D8B /* ViewController.swift */,
 				A7D959AB1B64F62E009D1D8B /* Main.storyboard */,
@@ -94,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				A7D959A31B64F62E009D1D8B /* Info.plist */,
+				E75EC5AF1B6544B300191B19 /* timetable-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -113,6 +124,31 @@
 				A7D959BC1B64F62E009D1D8B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E75EC5AD1B65448200191B19 /* Thirsd party */ = {
+			isa = PBXGroup;
+			children = (
+				E75EC5AE1B65449000191B19 /* HTML parser */,
+			);
+			name = "Thirsd party";
+			sourceTree = "<group>";
+		};
+		E75EC5AE1B65449000191B19 /* HTML parser */ = {
+			isa = PBXGroup;
+			children = (
+				E75EC5B31B6544C600191B19 /* HTMLNode.swift */,
+				E75EC5B41B6544C600191B19 /* HTMLParser.swift */,
+			);
+			name = "HTML parser";
+			sourceTree = "<group>";
+		};
+		E75EC5BB1B65450B00191B19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E75EC5B71B6544E600191B19 /* libxml2.dylib */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,9 +251,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E75EC5B51B6544C600191B19 /* HTMLNode.swift in Sources */,
 				A7D959AA1B64F62E009D1D8B /* ViewController.swift in Sources */,
 				A7D959A51B64F62E009D1D8B /* AppDelegate.swift in Sources */,
 				A7D959A81B64F62E009D1D8B /* timetable.xcdatamodeld in Sources */,
+				E75EC5B61B6544C600191B19 /* HTMLParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,9 +382,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = timetable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "timetable/timetable-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -354,9 +401,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = timetable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "timetable/timetable-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -413,6 +468,7 @@
 				A7D959C31B64F62E009D1D8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A7D959C41B64F62E009D1D8B /* Build configuration list for PBXNativeTarget "timetableTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +477,7 @@
 				A7D959C61B64F62E009D1D8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
