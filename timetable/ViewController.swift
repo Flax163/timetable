@@ -16,9 +16,10 @@ class ViewController: UIViewController
     {
         var url:NSURL = NSURL(string: tolgasTimeTableUrl)!
         var request2:NSMutableURLRequest = NSMutableURLRequest(URL: url)
+        
         request2.HTTPMethod = "POST"
         var bodyData:String = "rel=0&grp=177&prep=0&audi=0&vr=576&from=30.04.2015&to=30.06.2015&submit_button=ПОКАЗАТЬ";
-        request2.HTTPBody = bodyData.dataUsingEncoding(NSWindowsCP1252StringEncoding)
+        request2.HTTPBody = bodyData.dataUsingEncoding(NSWindowsCP1251StringEncoding)
         
         let task = NSURLSession.sharedSession().dataTaskWithRequest(request2, completionHandler:
             {
@@ -28,11 +29,11 @@ class ViewController: UIViewController
                     println("error=\(error)")
                     return
                 }
+                var er:NSError? = NSError()
+                var responseString:String = NSString(data: data, encoding: NSWindowsCP1251StringEncoding)! as String
+                var olo:HTMLParser = HTMLParser(html: responseString, encoding: NSWindowsCP1251StringEncoding, error: &er)
+                println(olo.body?.xpath("//*[@id=\"send\"]/tbody"))
                 
-                println("response = \(response)")
-                
-                var responseString:String = NSString(data: data, encoding: NSWindowsCP1252StringEncoding)! as String
-                println("responseString = \(responseString)")
             })
         
         task.resume()
