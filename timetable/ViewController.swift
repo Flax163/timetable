@@ -8,49 +8,37 @@
 
 import UIKit
 
-class ViewController: UIViewController
+class StartViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
 {
-    let tolgasTimeTableUrl:String = "http://www.tolgas.ru/services/raspisanie/"
-
-    @IBAction func responeButton(sender: UIButton)
+    var loadService:LoadScheduleService?
+    var loadParameterSearchService:LoadParameterSearchService?
+    var groups:Array<Group> = Array()
+    
+    required init(coder aDecoder: NSCoder)
     {
-        var url:NSURL = NSURL(string: tolgasTimeTableUrl)!
-        var request2:NSMutableURLRequest = NSMutableURLRequest(URL: url)
-        
-        request2.HTTPMethod = "POST"
-        var bodyData:String = "rel=0&grp=177&prep=0&audi=0&vr=576&from=30.04.2015&to=30.06.2015&submit_button=ПОКАЗАТЬ";
-        request2.HTTPBody = bodyData.dataUsingEncoding(NSWindowsCP1251StringEncoding)
-        
-        let task = NSURLSession.sharedSession().dataTaskWithRequest(request2, completionHandler:
-            {
-                data, response, error in
-                if error != nil
-                {
-                    println("error=\(error)")
-                    return
-                }
-                var er:NSError? = NSError()
-                var responseString:String = NSString(data: data, encoding: NSWindowsCP1251StringEncoding)! as String
-                var olo:HTMLParser = HTMLParser(html: responseString, encoding: NSWindowsCP1251StringEncoding, error: &er)
-                println(olo.body?.xpath("//*[@id=\"send\"]/tbody"))
-                
-            })
-        
-        task.resume()
+        super.init(coder: aDecoder)
+        self.loadService = LoadScheduleServiceImpl()
+        self.loadParameterSearchService = LoadParametersearchServiceImpl()
     }
  
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        groups = loadParameterSearchService!.loadGroups()
     }
-
-    override func didReceiveMemoryWarning()
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        return groups.count
     }
-
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    {
+        var seachCell:SearchTableCell = tableView.dequeueReusableCellWithIdentifier("searchCell") as! SearchTableCell
+        
+        seachCell.insertSearchName(groups[indexPath.section].name)
+        return seachCell
+    }
 
 }
 

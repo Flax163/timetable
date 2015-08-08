@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06ACB9B96AE5AB89F7D080755AA9615A /* libxmlHTMLDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66E9722073883483FC3C8475720E5B8 /* libxmlHTMLDocument.swift */; };
+		0A6C515A3252A445F51818EE31BEC3CE /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BC90827286DF14F481B1BBB8146B4B94 /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C51DBEBDDDBBC8B0B457DDC12B35B7B /* valid.h in Headers */ = {isa = PBXBuildFile; fileRef = 71FD334FAA7D29A8FD3D760677E9EB14 /* valid.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CB7D75B2D260E063036A32E99822893 /* HTMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C730F087C00683A13D3E87CA2B602E42 /* HTMLParser.swift */; };
+		0E446A60980362DF6C75666FC97E32E5 /* libxmlHTMLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFBA4FB35C13FDE3A4B143DC89C6AE6 /* libxmlHTMLNode.swift */; };
+		10F5312412B0FB1E3CD55BA8B1660773 /* list.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E1D7FC677BBCCF76E7102823EBA8433 /* list.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CBAEE9278775252EEE8731BED003991 /* Kanna-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFC498292524694960073AEF3F0E80C /* Kanna-dummy.m */; };
+		26A975E84F75E77425B730FA3CA1C786 /* Kanna-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E0F6E03022849FC24E863B1B26CB439 /* Kanna-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E718C8DC5DD8D12EDED0FFBF72713B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A434E76EC8DA541FC248FA6C797255D1 /* Foundation.framework */; };
+		47DAC508DBAF5F7D284E1FE9BDFDE5B8 /* CSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1EBC2CAC7D2F5F0E431C3BEE9A6B41 /* CSS.swift */; };
+		4870E22695036E96EFA8BFD8F32FB23D /* encoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B0C836EE2378EE5B0E1CDAB9DF1613E /* encoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D66F38918AA5E60B2B64C128FF77A24 /* xlink.h in Headers */ = {isa = PBXBuildFile; fileRef = 2116F1ED7103AFD753452E190BBBC597 /* xlink.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6211049C94D91F6C184CE683028BEEF0 /* SAX.h in Headers */ = {isa = PBXBuildFile; fileRef = 992EEF67F1720E1126A98B1A00E19A27 /* SAX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6312CB28CC47D7169F91338D8BEFA4F2 /* xmlversion.h in Headers */ = {isa = PBXBuildFile; fileRef = 8340C5FF3B02E22EFAE8A5AD76B91030 /* xmlversion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65C61C8EBFA319D118C46B4CC4FDD862 /* libxmlParserOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1371E41F7E41D078676312A034A4C71 /* libxmlParserOption.swift */; };
+		6A6108931F833D3175ED7EDC51FD46A4 /* threads.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AEEBE73D59CAA36FDAA068EAEBF936A /* threads.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F078B2173ACF3A6BCBE384BDB5B040A /* HTMLtree.h in Headers */ = {isa = PBXBuildFile; fileRef = 72E67D6ED4672D2344BA4D32931A14D8 /* HTMLtree.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		722D5D103241DC8786709F03069F1E7E /* xmlmemory.h in Headers */ = {isa = PBXBuildFile; fileRef = E41EBE1DF26ED37E43A509F126CAD7DF /* xmlmemory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7396ECD255C9B2B525BCE9113ACE7FBB /* HTMLparser.h in Headers */ = {isa = PBXBuildFile; fileRef = 065A00F35AB6C52C15840B425A00C25A /* HTMLparser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7553CACAC9479E7D5C70BAB0DDEACE87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A434E76EC8DA541FC248FA6C797255D1 /* Foundation.framework */; };
+		78F974D752457BBD239697B781D5893B /* Kanna.swift in Sources */ = {isa = PBXBuildFile; fileRef = 022068EA46AE488BAD19A945A20A4E74 /* Kanna.swift */; };
+		7EB789599F679B7AAE3D3880907BF190 /* parser.h in Headers */ = {isa = PBXBuildFile; fileRef = 63BE11D70AC4514EE1A2F26EF37E617B /* parser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82ADBE86A5C001ABC4504D6D81221555 /* xmlautomata.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B850A3548110FFC2490049E8CF97013 /* xmlautomata.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87360F0F0AF78F93E93788546AA9BC34 /* xmlIO.h in Headers */ = {isa = PBXBuildFile; fileRef = F6799FA652343DC2AA718D1930F0C718 /* xmlIO.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AEF556D3CF8CBA914FCFD0EEE21AD83 /* tree.h in Headers */ = {isa = PBXBuildFile; fileRef = CB0CD7DE43FB7A0D1693C4AF5B181879 /* tree.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BEE828E98E928306A0A277786CC265B /* dict.h in Headers */ = {isa = PBXBuildFile; fileRef = B0873785AEDECD7983E0765491C137DE /* dict.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C60CF4345284A4F65786C9856689CB5 /* xmlerror.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F8896BE071EE9FDDEED00887E04C2A4 /* xmlerror.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F67F643FF028E172FF987D9A9DBD0DC /* xpath.h in Headers */ = {isa = PBXBuildFile; fileRef = F84E27D5D0B9B1CCD63DEA1326C05B0B /* xpath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A00CB48CC38CE3301C82B2918BE59D01 /* xpathInternals.h in Headers */ = {isa = PBXBuildFile; fileRef = DC10ECC30E1E5F34EABC9A11878F8D27 /* xpathInternals.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7A072A1CAA580219ED861D0E19B2C6C /* xmlregexp.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E35FBA69CB348706737E1BC7E349C26 /* xmlregexp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B718CAB3AF009D593832EF80B0545DDB /* globals.h in Headers */ = {isa = PBXBuildFile; fileRef = 563F877C51EA7A84AF618985CD0D18C4 /* globals.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B75B043CF3B8D2FF81389C65EB67EA2E /* SAX2.h in Headers */ = {isa = PBXBuildFile; fileRef = 74BCB86A1D0FB4428B80431D2877D658 /* SAX2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C21A2CF90E926322F0D02FD0C4C438FF /* xmlstring.h in Headers */ = {isa = PBXBuildFile; fileRef = 200CCF462D766283243ED6349E5CEEC2 /* xmlstring.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E01639393F75B950C3E34CB39E0E962F /* hash.h in Headers */ = {isa = PBXBuildFile; fileRef = 69927DF25F12CBBE6590C14AF44D6B63 /* hash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4728A755BAA5D65B25E365E4E95F5D8 /* xmlexports.h in Headers */ = {isa = PBXBuildFile; fileRef = 6617AD0073E17F3B2B32FDF49F00FA87 /* xmlexports.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E765C81D184D2BCEAF246878872F4B36 /* entities.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA576DA694F6BC142682808C62E18CB /* entities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E82C872EA1B8CDF79D05CF935A0851EC /* Kanna.h in Headers */ = {isa = PBXBuildFile; fileRef = 958DD5F1ABFA843F638B6D2A1E9E6BB3 /* Kanna.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0750E010D7617E8794DBD1C3BA8651E /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C0C5A0C981042103C9D1492BED8A3F /* Pods-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC720968A58D32763ACC7674028DEC34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40A189E8A3133D964BC6B8DCBA3EB69F;
+			remoteInfo = Kanna;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		022068EA46AE488BAD19A945A20A4E74 /* Kanna.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kanna.swift; path = Source/Kanna.swift; sourceTree = "<group>"; };
+		065A00F35AB6C52C15840B425A00C25A /* HTMLparser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLparser.h; path = Library/libxml/HTMLparser.h; sourceTree = "<group>"; };
+		0E35FBA69CB348706737E1BC7E349C26 /* xmlregexp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = xmlregexp.h; path = Library/libxml/xmlregexp.h; sourceTree = "<group>"; };
+		0F8896BE071EE9FDDEED00887E04C2A4 /* xmlerror.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = xmlerror.h; path = Library/libxml/xmlerror.h; sourceTree = "<group>"; };
+		10E08FDE24E56EB7E4FEF219E46D31C7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		200CCF462D766283243ED6349E5CEEC2 /* xmlstring.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = xmlstring.h; path = Library/libxml/xmlstring.h; sourceTree = "<group>"; };
+		2116F1ED7103AFD753452E190BBBC597 /* xlink.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = xlink.h; path = Library/libxml/xlink.h; sourceTree = "<group>"; };
+		2AEEBE73D59CAA36FDAA068EAEBF936A /* threads.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = threads.h; path = Library/libxml/threads.h; sourceTree = "<group>"; };
+		2B0C836EE2378EE5B0E1CDAB9DF1613E /* encoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = encoding.h; path = Library/libxml/encoding.h; sourceTree = "<group>"; };
+		2E1D7FC677BBCCF76E7102823EBA8433 /* list.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = list.h; path = Library/libxml/list.h; sourceTree = "<group>"; };
+		4BCF500E0656597FC81930E9F3FB2C01 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E0F6E03022849FC24E863B1B26CB439 /* Kanna-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kanna-umbrella.h"; sourceTree = "<group>"; };
+		4F1EBC2CAC7D2F5F0E431C3BEE9A6B41 /* CSS.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSS.swift; path = Source/CSS.swift; sourceTree = "<group>"; };
+		563F877C51EA7A84AF618985CD0D18C4 /* globals.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = globals.h; path = Library/libxml/globals.h; sourceTree = "<group>"; };
+		5DA576DA694F6BC142682808C62E18CB /* entities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = entities.h; path = Library/libxml/entities.h; sourceTree = "<group>"; };
+		63BE11D70AC4514EE1A2F26EF37E617B /* parser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = parser.h; path = Library/libxml/parser.h; sourceTree = "<group>"; };
+		6617AD0073E17F3B2B32FDF49F00FA87 /* xmlexports.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = xmlexports.h; path = Library/libxml/xmlexports.h; sourceTree = "<group>"; };
+		69927DF25F12CBBE6590C14AF44D6B63 /* hash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hash.h; path = Library/libxml/hash.h; sourceTree = "<group>"; };
+		6B850A3548110FFC2490049E8CF97013 /* xmlautomata.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = xmlautomata.h; path = Library/libxml/xmlautomata.h; sourceTree = "<group>"; };
+		71FD334FAA7D29A8FD3D760677E9EB14 /* valid.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = valid.h; path = Library/libxml/valid.h; sourceTree = "<group>"; };
+		72C0C5A0C981042103C9D1492BED8A3F /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		72E67D6ED4672D2344BA4D32931A14D8 /* HTMLtree.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTMLtree.h; path = Library/libxml/HTMLtree.h; sourceTree = "<group>"; };
+		74BCB86A1D0FB4428B80431D2877D658 /* SAX2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SAX2.h; path = Library/libxml/SAX2.h; sourceTree = "<group>"; };
+		79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
+		7ACEB6F6A9DE90E0A1CAA81A8C0B9EBA /* Kanna.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kanna.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8340C5FF3B02E22EFAE8A5AD76B91030 /* xmlversion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = xmlversion.h; path = Library/libxml/xmlversion.h; sourceTree = "<group>"; };
+		87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		922EEE5D49846669FB1A008A854EAF92 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		958DD5F1ABFA843F638B6D2A1E9E6BB3 /* Kanna.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kanna.h; path = Source/Kanna.h; sourceTree = "<group>"; };
+		992EEF67F1720E1126A98B1A00E19A27 /* SAX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SAX.h; path = Library/libxml/SAX.h; sourceTree = "<group>"; };
+		9A5DB875AEB9604AB8A1E9376344F642 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A434E76EC8DA541FC248FA6C797255D1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		ABEB11EC16551256BF4C164F470C6463 /* Kanna.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Kanna.xcconfig; sourceTree = "<group>"; };
+		ABFC498292524694960073AEF3F0E80C /* Kanna-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kanna-dummy.m"; sourceTree = "<group>"; };
+		B0873785AEDECD7983E0765491C137DE /* dict.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dict.h; path = Library/libxml/dict.h; sourceTree = "<group>"; };
+		B4DBF6B0F7BEEB794727E98A0CCC69C2 /* Kanna-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kanna-prefix.pch"; sourceTree = "<group>"; };
+		B66E9722073883483FC3C8475720E5B8 /* libxmlHTMLDocument.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlHTMLDocument.swift; path = Source/libxml/libxmlHTMLDocument.swift; sourceTree = "<group>"; };
+		B8E923955FE2B77B097C3F086A72E3A5 /* Kanna-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Kanna-Private.xcconfig"; sourceTree = "<group>"; };
+		B8EB6480FC75F4A4F7FBC041A46FBC58 /* Kanna.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Kanna.modulemap; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BC90827286DF14F481B1BBB8146B4B94 /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
+		C730F087C00683A13D3E87CA2B602E42 /* HTMLParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTMLParser.swift; path = Source/_obsolete/HTMLParser.swift; sourceTree = "<group>"; };
+		CAFBA4FB35C13FDE3A4B143DC89C6AE6 /* libxmlHTMLNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlHTMLNode.swift; path = Source/libxml/libxmlHTMLNode.swift; sourceTree = "<group>"; };
+		CB0CD7DE43FB7A0D1693C4AF5B181879 /* tree.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tree.h; path = Library/libxml/tree.h; sourceTree = "<group>"; };
+		CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D1371E41F7E41D078676312A034A4C71 /* libxmlParserOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = libxmlParserOption.swift; path = Source/libxml/libxmlParserOption.swift; sourceTree = "<group>"; };
+		DC10ECC30E1E5F34EABC9A11878F8D27 /* xpathInternals.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = xpathInternals.h; path = Library/libxml/xpathInternals.h; sourceTree = "<group>"; };
+		E41EBE1DF26ED37E43A509F126CAD7DF /* xmlmemory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = xmlmemory.h; path = Library/libxml/xmlmemory.h; sourceTree = "<group>"; };
+		E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6799FA652343DC2AA718D1930F0C718 /* xmlIO.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = xmlIO.h; path = Library/libxml/xmlIO.h; sourceTree = "<group>"; };
+		F84E27D5D0B9B1CCD63DEA1326C05B0B /* xpath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = xpath.h; path = Library/libxml/xpath.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C67B560E74E88010747A3B81CBD97ECF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7553CACAC9479E7D5C70BAB0DDEACE87 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D97B21487FA89211D78186A99559176F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E718C8DC5DD8D12EDED0FFBF72713B6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FC06526E365F96F33446CE9E56C2CF8 /* Kanna */ = {
+			isa = PBXGroup;
+			children = (
+				4F1EBC2CAC7D2F5F0E431C3BEE9A6B41 /* CSS.swift */,
+				C730F087C00683A13D3E87CA2B602E42 /* HTMLParser.swift */,
+				065A00F35AB6C52C15840B425A00C25A /* HTMLparser.h */,
+				72E67D6ED4672D2344BA4D32931A14D8 /* HTMLtree.h */,
+				958DD5F1ABFA843F638B6D2A1E9E6BB3 /* Kanna.h */,
+				022068EA46AE488BAD19A945A20A4E74 /* Kanna.swift */,
+				992EEF67F1720E1126A98B1A00E19A27 /* SAX.h */,
+				74BCB86A1D0FB4428B80431D2877D658 /* SAX2.h */,
+				B0873785AEDECD7983E0765491C137DE /* dict.h */,
+				2B0C836EE2378EE5B0E1CDAB9DF1613E /* encoding.h */,
+				5DA576DA694F6BC142682808C62E18CB /* entities.h */,
+				563F877C51EA7A84AF618985CD0D18C4 /* globals.h */,
+				69927DF25F12CBBE6590C14AF44D6B63 /* hash.h */,
+				B66E9722073883483FC3C8475720E5B8 /* libxmlHTMLDocument.swift */,
+				CAFBA4FB35C13FDE3A4B143DC89C6AE6 /* libxmlHTMLNode.swift */,
+				D1371E41F7E41D078676312A034A4C71 /* libxmlParserOption.swift */,
+				2E1D7FC677BBCCF76E7102823EBA8433 /* list.h */,
+				63BE11D70AC4514EE1A2F26EF37E617B /* parser.h */,
+				2AEEBE73D59CAA36FDAA068EAEBF936A /* threads.h */,
+				CB0CD7DE43FB7A0D1693C4AF5B181879 /* tree.h */,
+				71FD334FAA7D29A8FD3D760677E9EB14 /* valid.h */,
+				2116F1ED7103AFD753452E190BBBC597 /* xlink.h */,
+				F6799FA652343DC2AA718D1930F0C718 /* xmlIO.h */,
+				6B850A3548110FFC2490049E8CF97013 /* xmlautomata.h */,
+				0F8896BE071EE9FDDEED00887E04C2A4 /* xmlerror.h */,
+				6617AD0073E17F3B2B32FDF49F00FA87 /* xmlexports.h */,
+				E41EBE1DF26ED37E43A509F126CAD7DF /* xmlmemory.h */,
+				0E35FBA69CB348706737E1BC7E349C26 /* xmlregexp.h */,
+				200CCF462D766283243ED6349E5CEEC2 /* xmlstring.h */,
+				8340C5FF3B02E22EFAE8A5AD76B91030 /* xmlversion.h */,
+				F84E27D5D0B9B1CCD63DEA1326C05B0B /* xpath.h */,
+				DC10ECC30E1E5F34EABC9A11878F8D27 /* xpathInternals.h */,
+				FDD60B72B647B976C9FB6C3AD12B240A /* Support Files */,
+			);
+			path = Kanna;
+			sourceTree = "<group>";
+		};
+		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A434E76EC8DA541FC248FA6C797255D1 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		75D98FF52E597A11900E131B6C4E1ADA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */,
+				79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */,
+				D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */,
+				87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */,
+				72C0C5A0C981042103C9D1492BED8A3F /* Pods-dummy.m */,
+				E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */,
+				CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */,
+				BC90827286DF14F481B1BBB8146B4B94 /* Pods-umbrella.h */,
+				10E08FDE24E56EB7E4FEF219E46D31C7 /* Pods.debug.xcconfig */,
+				922EEE5D49846669FB1A008A854EAF92 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				E773BBEE68AD3D288B9085270AD93D46 /* Pods */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				B7B80995527643776607AFFA75B91E24 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		B7B80995527643776607AFFA75B91E24 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				75D98FF52E597A11900E131B6C4E1ADA /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7ACEB6F6A9DE90E0A1CAA81A8C0B9EBA /* Kanna.framework */,
+				9A5DB875AEB9604AB8A1E9376344F642 /* Pods.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E773BBEE68AD3D288B9085270AD93D46 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1FC06526E365F96F33446CE9E56C2CF8 /* Kanna */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FDD60B72B647B976C9FB6C3AD12B240A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4BCF500E0656597FC81930E9F3FB2C01 /* Info.plist */,
+				B8EB6480FC75F4A4F7FBC041A46FBC58 /* Kanna.modulemap */,
+				ABEB11EC16551256BF4C164F470C6463 /* Kanna.xcconfig */,
+				B8E923955FE2B77B097C3F086A72E3A5 /* Kanna-Private.xcconfig */,
+				ABFC498292524694960073AEF3F0E80C /* Kanna-dummy.m */,
+				B4DBF6B0F7BEEB794727E98A0CCC69C2 /* Kanna-prefix.pch */,
+				4E0F6E03022849FC24E863B1B26CB439 /* Kanna-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Kanna";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		032B3066EA505ED9B6A777E2B1D67BC7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A6C515A3252A445F51818EE31BEC3CE /* Pods-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AAD21B0F32AD559C09B3463BD9C9D77 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7396ECD255C9B2B525BCE9113ACE7FBB /* HTMLparser.h in Headers */,
+				6F078B2173ACF3A6BCBE384BDB5B040A /* HTMLtree.h in Headers */,
+				26A975E84F75E77425B730FA3CA1C786 /* Kanna-umbrella.h in Headers */,
+				E82C872EA1B8CDF79D05CF935A0851EC /* Kanna.h in Headers */,
+				6211049C94D91F6C184CE683028BEEF0 /* SAX.h in Headers */,
+				B75B043CF3B8D2FF81389C65EB67EA2E /* SAX2.h in Headers */,
+				8BEE828E98E928306A0A277786CC265B /* dict.h in Headers */,
+				4870E22695036E96EFA8BFD8F32FB23D /* encoding.h in Headers */,
+				E765C81D184D2BCEAF246878872F4B36 /* entities.h in Headers */,
+				B718CAB3AF009D593832EF80B0545DDB /* globals.h in Headers */,
+				E01639393F75B950C3E34CB39E0E962F /* hash.h in Headers */,
+				10F5312412B0FB1E3CD55BA8B1660773 /* list.h in Headers */,
+				7EB789599F679B7AAE3D3880907BF190 /* parser.h in Headers */,
+				6A6108931F833D3175ED7EDC51FD46A4 /* threads.h in Headers */,
+				8AEF556D3CF8CBA914FCFD0EEE21AD83 /* tree.h in Headers */,
+				0C51DBEBDDDBBC8B0B457DDC12B35B7B /* valid.h in Headers */,
+				5D66F38918AA5E60B2B64C128FF77A24 /* xlink.h in Headers */,
+				87360F0F0AF78F93E93788546AA9BC34 /* xmlIO.h in Headers */,
+				82ADBE86A5C001ABC4504D6D81221555 /* xmlautomata.h in Headers */,
+				8C60CF4345284A4F65786C9856689CB5 /* xmlerror.h in Headers */,
+				E4728A755BAA5D65B25E365E4E95F5D8 /* xmlexports.h in Headers */,
+				722D5D103241DC8786709F03069F1E7E /* xmlmemory.h in Headers */,
+				A7A072A1CAA580219ED861D0E19B2C6C /* xmlregexp.h in Headers */,
+				C21A2CF90E926322F0D02FD0C4C438FF /* xmlstring.h in Headers */,
+				6312CB28CC47D7169F91338D8BEFA4F2 /* xmlversion.h in Headers */,
+				9F67F643FF028E172FF987D9A9DBD0DC /* xpath.h in Headers */,
+				A00CB48CC38CE3301C82B2918BE59D01 /* xpathInternals.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		40A189E8A3133D964BC6B8DCBA3EB69F /* Kanna */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5215223AE4BF85D9DFCA031BE275B8D2 /* Build configuration list for PBXNativeTarget "Kanna" */;
+			buildPhases = (
+				40E2B2705F54149E4B3FCFD5D7EA0357 /* Sources */,
+				C67B560E74E88010747A3B81CBD97ECF /* Frameworks */,
+				2AAD21B0F32AD559C09B3463BD9C9D77 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kanna;
+			productName = Kanna;
+			productReference = 7ACEB6F6A9DE90E0A1CAA81A8C0B9EBA /* Kanna.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6C201BE953B3EC5A31BE63EB23457B01 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2481576D0C7BACCD97AC904565BC9855 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				B2474E272BDF1ACDCFDD6C8BCB03953F /* Sources */,
+				D97B21487FA89211D78186A99559176F /* Frameworks */,
+				032B3066EA505ED9B6A777E2B1D67BC7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62E62B13C275241B28F1CB6B9B8E5CE7 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 9A5DB875AEB9604AB8A1E9376344F642 /* Pods.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				40A189E8A3133D964BC6B8DCBA3EB69F /* Kanna */,
+				6C201BE953B3EC5A31BE63EB23457B01 /* Pods */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40E2B2705F54149E4B3FCFD5D7EA0357 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47DAC508DBAF5F7D284E1FE9BDFDE5B8 /* CSS.swift in Sources */,
+				0CB7D75B2D260E063036A32E99822893 /* HTMLParser.swift in Sources */,
+				1CBAEE9278775252EEE8731BED003991 /* Kanna-dummy.m in Sources */,
+				78F974D752457BBD239697B781D5893B /* Kanna.swift in Sources */,
+				06ACB9B96AE5AB89F7D080755AA9615A /* libxmlHTMLDocument.swift in Sources */,
+				0E446A60980362DF6C75666FC97E32E5 /* libxmlHTMLNode.swift in Sources */,
+				65C61C8EBFA319D118C46B4CC4FDD862 /* libxmlParserOption.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2474E272BDF1ACDCFDD6C8BCB03953F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0750E010D7617E8794DBD1C3BA8651E /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		62E62B13C275241B28F1CB6B9B8E5CE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Kanna;
+			target = 40A189E8A3133D964BC6B8DCBA3EB69F /* Kanna */;
+			targetProxy = BC720968A58D32763ACC7674028DEC34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03A8AB12062A8E18D130FF8A83EB9C8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8E923955FE2B77B097C3F086A72E3A5 /* Kanna-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.2;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.2;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Kanna/Kanna-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Kanna/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Kanna/Kanna.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Kanna;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3A742E68832A6B5F0D26029C49C45158 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10E08FDE24E56EB7E4FEF219E46D31C7 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		ABF19A3EA64DFBA41C8A62E18FBBC771 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8E923955FE2B77B097C3F086A72E3A5 /* Kanna-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.1.2;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.2;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Kanna/Kanna-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Kanna/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Kanna/Kanna.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Kanna;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C83DE1831BADFF3096750BD9A0E9041A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 922EEE5D49846669FB1A008A854EAF92 /* Pods.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2481576D0C7BACCD97AC904565BC9855 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A742E68832A6B5F0D26029C49C45158 /* Debug */,
+				C83DE1831BADFF3096750BD9A0E9041A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
+				FB45FFD90572718D82AB9092B750F0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5215223AE4BF85D9DFCA031BE275B8D2 /* Build configuration list for PBXNativeTarget "Kanna" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03A8AB12062A8E18D130FF8A83EB9C8C /* Debug */,
+				ABF19A3EA64DFBA41C8A62E18FBBC771 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

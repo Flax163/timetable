@@ -1,0 +1,3 @@
+[submodule "GlimpseXML."]
+	path = GlimpseXML.
+	url = https://github.com/glimpseio/GlimpseXML.git
