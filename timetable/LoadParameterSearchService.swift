@@ -9,14 +9,15 @@
 import Foundation
 import Kanna
 
+
 protocol LoadParameterSearchService
 {
-    func loadGroups()->Array<Group>
+    func loadGroups(completion: (groups: Array<Group>) -> Void)
 }
 
 class LoadParametersearchServiceImpl : LoadParameterSearchService
 {
-    func loadGroups()->Array<Group>
+    func loadGroups(completion: (groups: Array<Group>) -> Void)
     {
         var result:Array<Group> = Array<Group>()
         var url:NSURL = NSURL(string: LOAD_TOLGAS_TIMETABLE_URL)!
@@ -43,10 +44,10 @@ class LoadParametersearchServiceImpl : LoadParameterSearchService
                         result.append(group)
                     }
                 }
+                completion(groups: result)
         })
         
         task.resume()
-        return result
     }
 }
 

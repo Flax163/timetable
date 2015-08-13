@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  timetable
-//
-//  Created by Valentin on 26.07.15.
-//  Copyright (c) 2015 Valentin. All rights reserved.
-//
-
 import UIKit
 
 class StartViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
@@ -14,17 +6,28 @@ class StartViewController: UIViewController, UITableViewDataSource, UITableViewD
     var loadParameterSearchService:LoadParameterSearchService?
     var groups:Array<Group> = Array()
     
+    @IBOutlet var tableView: UITableView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
     required init(coder aDecoder: NSCoder)
     {
         super.init(coder: aDecoder)
         self.loadService = LoadScheduleServiceImpl()
         self.loadParameterSearchService = LoadParametersearchServiceImpl()
     }
+    
+    func loadGroupComplete(groups: Array<Group>)
+    {
+        self.groups = groups
+        self.tableView.reloadData()
+        self.activityIndicator.stopAnimating()
+    }
  
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        groups = loadParameterSearchService!.loadGroups()
+        self.activityIndicator.startAnimating()
+        loadParameterSearchService!.loadGroups(loadGroupComplete)
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
@@ -36,7 +39,7 @@ class StartViewController: UIViewController, UITableViewDataSource, UITableViewD
     {
         var seachCell:SearchTableCell = tableView.dequeueReusableCellWithIdentifier("searchCell") as! SearchTableCell
         
-        seachCell.insertSearchName(groups[indexPath.section].name)
+        seachCell.insertSearchName(groups[indexPath.row].name)
         return seachCell
     }
 

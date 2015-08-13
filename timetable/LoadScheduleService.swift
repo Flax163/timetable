@@ -21,7 +21,6 @@ class LoadScheduleServiceImpl: LoadScheduleService
         request2.HTTPMethod = "POST"
         var bodyData:String = "rel=0&grp=177&prep=0&audi=0&vr=576&from=30.04.2015&to=30.06.2015&submit_button=ПОКАЗАТЬ"
         request2.HTTPBody = bodyData.dataUsingEncoding(NSWindowsCP1251StringEncoding)
-        
         let task = NSURLSession.sharedSession().dataTaskWithRequest(request2, completionHandler:
         {
             data, response, error in
@@ -37,7 +36,7 @@ class LoadScheduleServiceImpl: LoadScheduleService
                 }
             }
         })
-        
+    
         task.resume()
         return Array<Schedule>()
     }

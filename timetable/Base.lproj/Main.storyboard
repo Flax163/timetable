@@ -72,22 +72,35 @@
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="YIN-IH-04H"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ba7-xN-4os">
+                                <rect key="frame" x="-10" y="-10" width="20" height="20"/>
+                                <color key="color" red="0.24707415187112947" green="0.62971423077679278" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="190" y="290" width="20" height="20"/>
+                                </variation>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="0M9-2K-Gt8"/>
                                 <exclude reference="odK-6D-QSL"/>
+                                <exclude reference="ba7-xN-4os"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="0M9-2K-Gt8"/>
                                 <include reference="odK-6D-QSL"/>
+                                <include reference="ba7-xN-4os"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="jXp-m5-971"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="ba7-xN-4os" id="NdE-Qg-tu8"/>
+                        <outlet property="tableView" destination="odK-6D-QSL" id="n0q-YA-eLQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -102,6 +115,7 @@
                         <viewControllerLayoutGuide type="bottom" id="0DI-3g-jL6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Hwg-F5-b8k">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
