@@ -7,7 +7,7 @@
         <!--Start View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="StartViewController" customModule="timetable" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="vXZ-lx-hvc" customClass="StartViewController" customModule="timetable" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -16,20 +16,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0M9-2K-Gt8">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <items>
-                                    <tabBarItem systemItem="favorites" id="7m8-B9-VI8"/>
-                                    <tabBarItem systemItem="more" id="JCj-Dy-8dx"/>
-                                </items>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="551" width="400" height="49"/>
-                                </variation>
-                            </tabBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="searchCell" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="odK-6D-QSL">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" id="Dhi-5u-6os">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="vXZ-lx-hvc" id="zn1-nc-CTX"/>
+                                    </connections>
+                                </searchBar>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="searchCell" id="fVj-i8-J3y" customClass="SearchTableCell" customModule="timetable" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -60,7 +57,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="searchName" destination="a5O-25-eO0" id="MB6-bw-1UG"/>
-                                            <segue destination="Pzd-cR-u4r" kind="show" id="HTy-2S-pFE"/>
+                                            <segue destination="Pzd-cR-u4r" kind="show" identifier="test" id="HTy-2S-pFE"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -72,44 +69,71 @@
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="YIN-IH-04H"/>
                                 </connections>
                             </tableView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ba7-xN-4os">
-                                <rect key="frame" x="-10" y="-10" width="20" height="20"/>
-                                <color key="color" red="0.24707415187112947" green="0.62971423077679278" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="NO1-LO-hfj">
+                                <rect key="frame" x="282" y="314" width="37" height="37"/>
+                                <color key="color" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="190" y="290" width="20" height="20"/>
+                                    <rect key="frame" x="1" y="278" width="400" height="37"/>
                                 </variation>
                             </activityIndicatorView>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0M9-2K-Gt8">
+                                <rect key="frame" x="0.0" y="551" width="600" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem title="Группы" id="7m8-B9-VI8"/>
+                                    <tabBarItem title="Преподователи" id="JCj-Dy-8dx"/>
+                                    <tabBarItem title="Аудитории" id="JGw-d1-MWB"/>
+                                </items>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="551" width="400" height="49"/>
+                                </variation>
+                            </tabBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="0M9-2K-Gt8"/>
-                                <exclude reference="odK-6D-QSL"/>
-                                <exclude reference="ba7-xN-4os"/>
-                            </mask>
-                        </variation>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="NO1-LO-hfj" secondAttribute="centerX" id="3h9-ug-wyj"/>
+                            <constraint firstItem="odK-6D-QSL" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="5mt-1v-Tkv"/>
+                            <constraint firstAttribute="centerY" secondItem="NO1-LO-hfj" secondAttribute="centerY" constant="-32" id="DE4-rf-MGw"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="odK-6D-QSL" secondAttribute="bottom" id="NV1-pF-Eeo"/>
+                            <constraint firstItem="0M9-2K-Gt8" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Nvc-Pq-8kn"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="0M9-2K-Gt8" secondAttribute="bottom" id="jja-ee-bby"/>
+                            <constraint firstAttribute="trailing" secondItem="odK-6D-QSL" secondAttribute="trailing" id="o1c-G0-Bll"/>
+                            <constraint firstAttribute="trailing" secondItem="0M9-2K-Gt8" secondAttribute="trailing" id="pys-LF-Dzh"/>
+                            <constraint firstItem="odK-6D-QSL" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="soA-e4-nkZ"/>
+                        </constraints>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="0M9-2K-Gt8"/>
                                 <include reference="odK-6D-QSL"/>
-                                <include reference="ba7-xN-4os"/>
+                                <include reference="NO1-LO-hfj"/>
+                                <include reference="0M9-2K-Gt8"/>
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="jXp-m5-971"/>
+                    <navigationItem key="navigationItem" id="4l3-YD-uMb"/>
                     <connections>
-                        <outlet property="activityIndicator" destination="ba7-xN-4os" id="NdE-Qg-tu8"/>
+                        <outlet property="activityIndicator" destination="NO1-LO-hfj" id="JP8-zC-Izc"/>
+                        <outlet property="searchDisplayController" destination="W2T-iy-A6I" id="dD8-V8-Vn0"/>
+                        <outlet property="tabBar" destination="0M9-2K-Gt8" id="4sS-qf-spJ"/>
                         <outlet property="tableView" destination="odK-6D-QSL" id="n0q-YA-eLQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="W2T-iy-A6I">
+                    <connections>
+                        <outlet property="delegate" destination="vXZ-lx-hvc" id="k3o-ee-xI9"/>
+                        <outlet property="searchBar" destination="Dhi-5u-6os" id="GCF-9M-KCF"/>
+                        <outlet property="searchContentsController" destination="vXZ-lx-hvc" id="N2c-j4-PSf"/>
+                        <outlet property="searchResultsDataSource" destination="vXZ-lx-hvc" id="gny-Gh-HX1"/>
+                        <outlet property="searchResultsDelegate" destination="vXZ-lx-hvc" id="Bou-eC-TIv"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="1126.5" y="-356"/>
+            <point key="canvasLocation" x="1024" y="-326"/>
         </scene>
-        <!--View Controller-->
+        <!--Check Data View Controller-->
         <scene sceneID="UGV-hs-eti">
             <objects>
-                <viewController id="Pzd-cR-u4r" sceneMemberID="viewController">
+                <viewController id="Pzd-cR-u4r" customClass="CheckDataViewController" customModule="timetable" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KCy-NY-4iX"/>
                         <viewControllerLayoutGuide type="bottom" id="0DI-3g-jL6"/>
@@ -122,7 +146,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xJ2-36-QA1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1926" y="-356"/>
+            <point key="canvasLocation" x="1820" y="-326"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lrt-dl-BiQ">
@@ -140,7 +164,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iE4-hX-00P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="265.5" y="-356"/>
+            <point key="canvasLocation" x="270" y="-326"/>
         </scene>
     </scenes>
 </document>

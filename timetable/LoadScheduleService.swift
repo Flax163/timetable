@@ -15,7 +15,7 @@ class LoadScheduleServiceImpl: LoadScheduleService
     
     func loadScheduleForGroup(group: Group, dateStart: Date, dateEnd: Date)->Array<Schedule>
     {
-        var url:NSURL = NSURL(string: LOAD_TOLGAS_TIMETABLE_URL)!
+        var url:NSURL = NSURL(string: LOAD_GROUP_TOLGAS_TIMETABLE_URL)!
         var request2:NSMutableURLRequest = NSMutableURLRequest(URL: url)
         
         request2.HTTPMethod = "POST"
